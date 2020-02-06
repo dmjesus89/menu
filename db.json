@@ -1,0 +1,390 @@
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+  "menu": [
+    {
+      "id": "cartao",
+      "title": "Cartão",
+      "icon": "fas fa-credit-card",
+      "itens": [
+        {
+          "id": "cartao_gestao",
+          "title": "Gestão de Cartões",
+          "link": "cartao/gestao"
+        },
+        {
+          "id": "compra_cartao",
+          "title": "Compra",
+          "itens": [
+            {
+              "id": "cartao_comprar_fazer_pedido",
+              "title": "Novo Pedido",
+              "link": "cartao/pedido/novo"
+            },
+            {
+              "id": "cartao_camprar_buscar_pedido",
+              "title": "Acompanhar Pedido",
+              "link": "cartao/pedido/buscar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prestacao_conta",
+      "title": "Prestação de Contas",
+      "icon": "fas fa-receipt",
+      "itens": [
+        {
+          "id": "prestacao_conta_gestao_despesa",
+          "title": "Gestão de Despesas",
+          "link": "prestacao_conta/gestao"
+        },
+        {
+          "id": "prestacao_conta_tipo_despesa",
+          "title": "Tipos de Despesa",
+          "itens": [
+            {
+              "id": "prestacao_conta_tipo_despesa_incluir",
+              "title": "Incluir",
+              "link": "cartao/pedido/novo"
+            },
+            {
+              "id": "prestacao_conta_tipo_despesa_consultar",
+              "title": "Consultar",
+              "link": "cartao/pedido/buscar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acesso_rapido_carga_descarga",
+      "title": "Carga/Descarga Cartão",
+      "icon": "fas fa-dollar-sign",
+      "link": "cartao/gerenciamento"
+    }
+  ],
+  "sessao": [
+    {
+      "usuario": [
+        {
+          "login": "jose.silva",
+          "nome": "Jose da Silva"
+        }
+      ]
+    }
+  ],
+  "contratante": {
+    "nome": "Cavalinho Transportes LTDA",
+    "cnpj": "99999999999999",
+    "cidade": "Santos",
+    "uf": "SP",
+    "pais": "Brasil",
+    "valorUnitarioCartao": 10
+  },
+  "portador-cartao": {
+    "cpf": "124.376.360-48",
+    "nome": "Dimitri Galter",
+    "nomeMae": "Maria Galter",
+    "dataNascimento": "01/01/1980",
+    "email": "Brasil",
+    "celular": "(11) 99999-9999"
+  },
+  "emissor-cartao": [
+    {
+      "id": 1,
+      "descricao": "Brasil Pré Pago (BPP)"
+    }
+  ],
+  "tipo-cartao": [
+    {
+      "id": 1,
+      "descricao": "Cartão BPP Frota",
+      "valor": 10.0
+    },
+    {
+      "id": 2,
+      "descricao": "Cartão BPP Salário",
+      "valor": 20.0
+    }
+  ],
+  "forma-entrega-cartao": [
+    {
+      "id": 1,
+      "descricao": "SEDEX",
+      "valor": "30"
+    },
+    {
+      "id": 2,
+      "descricao": "SEDEX 10",
+      "valor": "40"
+    },
+    {
+      "id": 3,
+      "descricao": "Carta Registrada",
+      "valor": "8"
+    },
+    {
+      "id": 4,
+      "descricao": "Transportadora",
+      "valor": "50"
+    },
+    {
+      "id": 5,
+      "descricao": "Retirar BPP",
+      "valor": "0"
+    }
+  ],
+  "status-pedido-cartao": [
+    {
+      "id": "1",
+      "descricao": "Pendente"
+    },
+    {
+      "id": "2",
+      "descricao": "Aguardando Processadora"
+    },
+    {
+      "id": "3",
+      "descricao": "Solicitado"
+    },
+    {
+      "id": "4",
+      "descricao": "Saldo Insuficiente"
+    }
+  ],
+  "status-cartao": [
+    {
+      "id": 1,
+      "descricao": "Ativo"
+    },
+    {
+      "id": 2,
+      "descricao": "Cancelado"
+    },
+    {
+      "id": 3,
+      "descricao": "Bloqueado"
+    },
+    {
+      "id": 4,
+      "descricao": "Pendente Vinculação"
+    },
+    {
+      "id": 5,
+      "descricao": "Pendente Senha"
+    },
+    {
+      "id": 6,
+      "descricao": "Pronto p/ Ativação"
+    }
+  ],
+  "status-prestacao-conta": [
+    {
+      "id": 1,
+      "descricao": "Pendente Prestação"
+    },
+    {
+      "id": 2,
+      "descricao": "Aguardando Aprovação"
+    },
+    {
+      "id": 3,
+      "descricao": "Aprovado"
+    },
+    {
+      "id": 4,
+      "descricao": "Recusado"
+    }
+  ],
+  "lista-gestao-cartao": [
+    {
+      "idCartao": "99999999",
+      "emissorCartao": "BPP",
+      "tipoCartao": "BPP Frota",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "portadorNome": "André Bermudez",
+      "portadorDocumento": "999.999.999-99",
+      "statusCartao": "Pendente Vinculação",
+      "acao": [{ "descricao": "vincular" }, { "descricao": "cancelar" }]
+    },
+    {
+      "idCartao": "99999998",
+      "emissorCartao": "BPP",
+      "tipoCartao": "BPP Frota",
+      "numeroCartao": "9999 99XX XXXX 9998",
+      "portadorNome": "Dimitri Galter",
+      "portadorDocumento": "999.999.999-98",
+      "statusCartao": "Ativo",
+      "acao": [
+        { "descricao": "bloquear" },
+        { "descricao": "cancelar" },
+        { "descricao": "alterar_portador" },
+        { "descricao": "alterar_senha" }
+      ]
+    },
+    {
+      "idCartao": "99999997",
+      "emissorCartao": "BPP",
+      "tipoCartao": "BPP Frota",
+      "numeroCartao": "9999 99XX XXXX 9997",
+      "portadorNome": "Borja de Jesus",
+      "portadorDocumento": "999.999.999-97",
+      "statusCartao": "Pronto Ativação",
+      "acao": [{ "descricao": "ativar" }, { "descricao": "cancelar" }]
+    },
+    {
+      "idCartao": "99999996",
+      "emissorCartao": "BPP",
+      "tipoCartao": "BPP Frota",
+      "numeroCartao": "9999 99XX XXXX 9996",
+      "portadorNome": "Paulo o Cirilo",
+      "portadorDocumento": "999.999.999-96",
+      "statusCartao": "Pendente Senha",
+      "acao": [{ "descricao": "reenviar_senha" }]
+    },
+    {
+      "idCartao": "99999995",
+      "emissorCartao": "BPP",
+      "tipoCartao": "BPP Frota",
+      "numeroCartao": "9999 99XX XXXX 9995",
+      "portadorNome": "José Ferreira",
+      "portadorDocumento": "999.999.999-95",
+      "statusCartao": "Bloqueado",
+      "acao": [{ "descricao": "desbloquear" }, { "descricao": "cancelar" }]
+    }
+  ],
+  "lista-pedido-cartao": [
+    {
+      "pedido": "201927120001",
+      "data": "27/12/2019",
+      "emissor": "BPP",
+      "produto": "Cartão BPP Frota",
+      "formaEntrega": "SEDEX",
+      "quantidade": 10,
+      "valorTotal": 130.0,
+      "status": "Pendente"
+    },
+    {
+      "pedido": "201927120002",
+      "data": "27/12/2019",
+      "emissor": "BPP",
+      "produto": "Cartão BPP Frota",
+      "formaEntrega": "SEDEX",
+      "quantidade": 20,
+      "valorTotal": 230.0,
+      "status": "Solicitado"
+    }
+  ],
+  "lista-historico-cartao": [
+    {
+      "data": "15/01/2020",
+      "evento": "Senha",
+      "complemento": "Nova senha cadastrada com sucesso."
+    },
+    {
+      "data": "15/01/2020",
+      "evento": "Senha",
+      "complemento": "Tentativa de senha falhou, a senha não foi alterada."
+    },
+    {
+      "data": "15/01/2020",
+      "evento": "Vinculação",
+      "complemento": "Novo portador vinculado com sucesso."
+    },
+    {
+      "data": "15/01/2020",
+      "evento": "Desbloqueio",
+      "complemento": "Cartão desbloqueado, liberado para uso."
+    },
+    {
+      "data": "10/01/2020",
+      "evento": "Bloqueio",
+      "complemento": "Cartão bloqueado, uso suspenso."
+    },
+    {
+      "data": "01/12/2019",
+      "evento": "Ativação",
+      "complemento": "Cartão ativado, liberado para uso."
+    },
+    {
+      "data": "01/12/2019",
+      "evento": "Senha",
+      "complemento": "Nova senha cadastrada com sucesso."
+    },
+    {
+      "data": "01/12/2019",
+      "evento": "Vinculação",
+      "complemento": "Novo portador vinculado com sucesso."
+    },
+    {
+      "data": "10/11/2019",
+      "evento": "Pendente",
+      "complemento": "Cartão novo, pendente vinculação de portador."
+    }
+  ],
+  "lista-gestao-prestacao-conta": [
+    {
+      "idDespesa": "999",
+      "idCartao": "99999999",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "documentoPortador": "999.999.999-99",
+      "nomePortador": "José da Silva",
+      "dataDespesa": "22/01/2020",
+      "localDespesa": "Restaurante Tio João",
+      "tipoDespesa": "Alimentação",
+      "valorDespesa": 22.95,
+      "statusDespesa": "Pendente Prestação"
+    },
+    {
+      "idDespesa": "998",
+      "idCartao": "99999999",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "documentoPortador": "999.999.999-99",
+      "nomePortador": "José da Silva",
+      "dataDespesa": "20/01/2020",
+      "localDespesa": "Borracharia 3 Irmãos",
+      "tipoDespesa": "Borracheiro",
+      "valorDespesa": 650,
+      "statusDespesa": "Pendente Prestação"
+    },
+    {
+      "idDespesa": "997",
+      "idCartao": "99999999",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "documentoPortador": "999.999.999-99",
+      "nomePortador": "José da Silva",
+      "dataDespesa": "18/01/2020",
+      "localDespesa": "Restaurante Fronteira",
+      "tipoDespesa": "Alimentação",
+      "valorDespesa": 44.9,
+      "statusDespesa": "Aguardando Aprovação"
+    },
+    {
+      "idDespesa": "996",
+      "idCartao": "99999999",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "documentoPortador": "999.999.999-99",
+      "nomePortador": "José da Silva",
+      "dataDespesa": "12/01/2020",
+      "localDespesa": "Restaurante Estrela",
+      "tipoDespesa": "Alimentação",
+      "valorDespesa": 144.66,
+      "statusDespesa": "Recusado"
+    },
+    {
+      "idDespesa": "995",
+      "idCartao": "99999999",
+      "numeroCartao": "9999 99XX XXXX 9999",
+      "documentoPortador": "999.999.999-99",
+      "nomePortador": "José da Silva",
+      "dataDespesa": "10/01/2020",
+      "localDespesa": "Restaurante Graal",
+      "tipoDespesa": "Alimentação",
+      "valorDespesa": 27.66,
+      "statusDespesa": "Aprovado"
+    }
+  ]
+}
