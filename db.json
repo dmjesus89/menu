@@ -31,30 +31,8 @@
     {
       "id": "prestacao_conta",
       "title": "Prestação de Contas",
-      "icon": "fas fa-receipt",
-      "itens": [
-        {
-          "id": "prestacao_conta_gestao_despesa",
-          "title": "Gestão de Despesas",
-          "link": "prestacao_conta/gestao"
-        },
-        {
-          "id": "prestacao_conta_tipo_despesa",
-          "title": "Tipos de Despesa",
-          "itens": [
-            {
-              "id": "prestacao_conta_tipo_despesa_incluir",
-              "title": "Incluir",
-              "link": "cartao/pedido/novo"
-            },
-            {
-              "id": "prestacao_conta_tipo_despesa_consultar",
-              "title": "Consultar",
-              "link": "cartao/pedido/buscar"
-            }
-          ]
-        }
-      ]
+      "icon": "fas fa-receipt"
+     
     }
   
   ]
