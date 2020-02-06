@@ -55,12 +55,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "acesso_rapido_carga_descarga",
-      "title": "Carga/Descarga Cartão",
-      "icon": "fas fa-dollar-sign",
-      "link": "cartao/gerenciamento"
     }
   
   ]
